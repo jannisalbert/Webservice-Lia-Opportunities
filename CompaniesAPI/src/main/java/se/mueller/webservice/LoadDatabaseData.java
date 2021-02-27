@@ -4,8 +4,8 @@ package se.mueller.webservice;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import se.mueller.webservice.entities.Director;
-import se.mueller.webservice.repositories.DirectorRepository;
+import se.mueller.webservice.entities.Company;
+import se.mueller.webservice.repositories.CompanyRepository;
 
 
 @Configuration
@@ -13,17 +13,15 @@ public class LoadDatabaseData {
 
 
     @Bean
-    CommandLineRunner loadDatabase(DirectorRepository directorRepository) {
+    CommandLineRunner loadDatabase(CompanyRepository companyRepository) {
         return args -> {
 
-            directorRepository.save(new Director(1L,"Frank","Darabont","french","1969"));
-            directorRepository.save(new Director(2L,"Francis Ford","Coppola","american","1939"));
-            directorRepository.save(new Director(3L,"Christopher","Nolan","england","1970"));
-            directorRepository.save(new Director(4L,"Sidney","Lumet","american","1924"));
-            directorRepository.save(new Director(5L,"Peter","Jackson","new zeeland","1961"));
-            directorRepository.save(new Director(6L,"Quentin","Torentino","american","1963"));
-            directorRepository.save(new Director(7L,"Steven","Spielberg","american","1946"));
-            directorRepository.save(new Director(8L,"David","Fincher","american","1962"));
+            companyRepository.save(new Company(1L,"Company A","companyA.se","Göteborg"));
+            companyRepository.save(new Company(2L,"Company B","companyB.se","Göteborg"));
+            companyRepository.save(new Company(3L,"Company C","companyC.se","Göteborg"));
+            companyRepository.save(new Company(4L,"Company D","companyD.se","Göteborg"));
+            companyRepository.save(new Company(5L,"Company E","companyE.se","Göteborg"));
+
 
         };
     }

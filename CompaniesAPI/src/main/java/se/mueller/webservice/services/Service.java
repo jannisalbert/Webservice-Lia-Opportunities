@@ -1,26 +1,22 @@
 package se.mueller.webservice.services;
 
 
-import org.springframework.data.jpa.domain.Specification;
-import se.mueller.webservice.dtos.Directordto;
-import se.mueller.webservice.dtos.DirectorNationality;
+import se.mueller.webservice.dtos.CompanyDto;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface Service {
 
-    List<Directordto> getAllDirectors();
+    List<CompanyDto> getAllCompanies();
 
-    Optional<Directordto> getOne(Long id);
+    Optional<CompanyDto> getOne(Long id);
 
-    Directordto createDirector(Directordto directorDto);
+    CompanyDto createCompany(CompanyDto directorDto);
 
     void delete(Long id);
 
-    Directordto replace(Long id, Directordto directorDto);
+    CompanyDto replace(Long id, CompanyDto directorDto);
 
-    Directordto update(Long id, DirectorNationality nationality);
-
-    List<Directordto> findAllBySpec(String search);
 }
+
