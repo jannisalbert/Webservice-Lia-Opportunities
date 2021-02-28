@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 import se.albertssonmueller.webservice.dtos.StatusDto;
-import se.albertssonmueller.webservice.services.Service;
+import se.albertssonmueller.webservice.services.StatusService;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,22 +14,22 @@ import java.util.Optional;
 @RestController
 public class StatusController {
 
-	private final Service service;
+	private final StatusService statusService;
 
-	public StatusController(Service service) {
-		this.service = service;
+	public StatusController(StatusService statusService) {
+		this.statusService = statusService;
 	}
 
 	@GetMapping("/status")
-	public List<StatusDto> all(Long id) {
-		return service.getAllStatus();
+	public List<StatusDto> all() {
+		return statusService.getAllStatus();
 	}
 
 	@GetMapping("/status/{id}")
 	public Optional<StatusDto> getOne(@PathVariable Long id) {
 
-		return Optional.ofNullable(service.getOneStatus(id)
+		return Optional.ofNullable(statusService.getOneStatus(id)
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
-						"Id " + id + " not found.")));
+						"Status-Id " + id + " not found.")));
 	}
 }
