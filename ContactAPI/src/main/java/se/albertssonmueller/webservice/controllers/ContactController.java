@@ -20,7 +20,7 @@ public class ContactController {
     }
 
     @GetMapping("/contacts")
-    public List<ContactDto> all(Long id) {
+    public List<ContactDto> all() {
         return service.getAllContacts();
     }
 

@@ -20,7 +20,7 @@ public class CompanyController {
     }
 
     @GetMapping("/contacts")
-    public List<CompanyDto> all(Long id) {
+    public List<CompanyDto> all() {
         return service.getAllCompanies();
     }
 
