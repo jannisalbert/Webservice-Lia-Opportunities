@@ -6,17 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Companies_API" />
         <module name="webserviceCompanies" />
+        <module name="Contact_API" />
+        <module name="ContextInformation_API" />
         <module name="webserviceContacts" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Companies_API" target="15" />
+      <module name="Contact_API" target="15" />
+      <module name="ContextInformation_API" target="15" />
       <module name="webserviceCompanies" target="15" />
       <module name="webserviceContacts" target="15" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Companies_API" options="-parameters" />
+      <module name="Contact_API" options="-parameters" />
+      <module name="ContextInformation_API" options="-parameters" />
       <module name="webserviceCompanies" options="-parameters" />
       <module name="webserviceContacts" options="-parameters" />
     </option>

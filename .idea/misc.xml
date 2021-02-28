@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/CompaniesAPI/pom.xml" />
         <option value="$PROJECT_DIR$/ContactAPI/pom.xml" />
+        <option value="$PROJECT_DIR$/ContextInformationAPI/pom.xml" />
       </list>
     </option>
   </component>
