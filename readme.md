@@ -27,8 +27,8 @@ Port 5053
 Port 5054
 
 Sammankopplingen av information görs genom UserEndpoint som hämtar information från alla andra
-services och som sammanställa information. UserEndPoint ger använderen möjligheten att lägga till en lead (med information
-om företaget, konktatperson, priorität och status av ansökningen) och att uppdatera en befindlig lead. 
+services och som sammanställa information. UserEndPoint ger användaren möjligheten att lägga till en lead (med information
+om företaget, kontaktperson, prioritet och status av ansökningen) och att uppdatera en befindligt lead. 
 
 
 
