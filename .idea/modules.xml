@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CompaniesAPI/webservice.iml" filepath="$PROJECT_DIR$/CompaniesAPI/webservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ContactAPI/webservice (1).iml" filepath="$PROJECT_DIR$/ContactAPI/webservice (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/CompaniesAPI/webserviceCompanies.iml" filepath="$PROJECT_DIR$/CompaniesAPI/webserviceCompanies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContactAPI/webserviceContacts.iml" filepath="$PROJECT_DIR$/ContactAPI/webserviceContacts.iml" />
     </modules>
   </component>
 </project>
