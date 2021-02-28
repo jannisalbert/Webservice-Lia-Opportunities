@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>se.mueller</groupId>
-    <artifactId>contextinfo-webservice</artifactId>
+    <artifactId>opportunities-webservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>contextinfo-webservice</name>
+    <name>opportunities-webservice</name>
     <description>Lia-Opportunities</description>
     <properties>
         <java.version>15</java.version>
@@ -22,13 +22,15 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+
+        <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
             <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
