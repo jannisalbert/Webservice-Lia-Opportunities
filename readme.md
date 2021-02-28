@@ -1,22 +1,44 @@
-#Lia Leads
 
-# Companies
-## Port 5050
-## localhost:5050/companies
 
-# Contact
-## Port 5051
-## localhost:5051/contacts
+# Webserice-Lia-Opportunities
 
-# ContextInfo
-## Port 5052
-## localhost:5052/priorities
-## localhost:5052/status
 
-# Opportunities
-## Port 5053
-## localhost:5053/opportunities
+I detta sidoporjekt byggar vi en web service för att kunna hantera sina LIA ansökningar.
+Webservice är byggt som en modulär applikation i Java.
 
-# UserEndPoint
-## Port 5054
-## localhost:5054/leads
+
+## Specifikation
+
+Programmet innehåler följande webservices/API som modul
+
+`Companies`
+Port 5050
+
+`Contact`
+Port 5051
+
+`ContextInfo` 
+Port 5052
+
+`Opportunities`
+Port 5053
+
+`UserEndPoint`
+Port 5054
+
+Sammankopplingen av information görs genom UserEndpoint som hämtar information från alla andra
+services och som sammanställa information. UserEndPoint ger använderen möjligheten att lägga till en lead (med information
+om företaget, konktatperson, priorität och status av ansökningen) och att uppdatera en befindlig lead. 
+
+
+
+## Installation
+
+
+
+## Licens
+
+[MIT License](https://opensource.org/licenses/MIT)
+
+
+
