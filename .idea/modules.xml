@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CompaniesAPI/webservice.iml" filepath="$PROJECT_DIR$/CompaniesAPI/webservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContactAPI/webservice (1).iml" filepath="$PROJECT_DIR$/ContactAPI/webservice (1).iml" />
     </modules>
   </component>
 </project>
