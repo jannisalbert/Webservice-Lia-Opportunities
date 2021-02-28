@@ -1,22 +1,22 @@
 package se.albertssonmueller.webservice.services;
 
 
-import se.albertssonmueller.webservice.dtos.CompanyDto;
+import se.albertssonmueller.webservice.dtos.ContactDto;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface Service {
 
-    List<CompanyDto> getAllCompanies();
+    List<ContactDto> getAllContacts();
 
-    Optional<CompanyDto> getOne(Long id);
+    Optional<ContactDto> getOne(Long id);
 
-    CompanyDto createCompany(CompanyDto directorDto);
+    ContactDto createContact(ContactDto directorDto);
 
     void delete(Long id);
 
-    CompanyDto replace(Long id, CompanyDto directorDto);
+    ContactDto replace(Long id, ContactDto directorDto);
 
 }
 
