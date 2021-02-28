@@ -9,5 +9,7 @@
     <file url="file://$PROJECT_DIR$/ContextInformationAPI/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/OpportunitiesAPI/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/OpportunitiesAPI/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserEndpointAPI/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserEndpointAPI/src/main/resources" charset="UTF-8" />
   </component>
 </project>

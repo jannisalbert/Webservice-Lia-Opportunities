@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/ContactAPI/pom.xml" />
         <option value="$PROJECT_DIR$/ContextInformationAPI/pom.xml" />
         <option value="$PROJECT_DIR$/OpportunitiesAPI/pom.xml" />
+        <option value="$PROJECT_DIR$/UserEndpointAPI/pom.xml" />
       </list>
     </option>
   </component>

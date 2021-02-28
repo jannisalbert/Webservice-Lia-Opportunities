@@ -6,19 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="webservice" />
-        <module name="Companies_API" />
+        <module name="Opportunnity_API" />
+        <module name="Lead_API" />
         <module name="webserviceCompanies" />
         <module name="Contact_API" />
-        <module name="ContextInformation_API" />
         <module name="webserviceContacts" />
+        <module name="Companies_API" />
+        <module name="ContextInformation_API" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Companies_API" target="15" />
       <module name="Contact_API" target="15" />
       <module name="ContextInformation_API" target="15" />
-      <module name="webservice" target="15" />
+      <module name="Lead_API" target="15" />
+      <module name="Opportunnity_API" target="15" />
       <module name="webserviceCompanies" target="15" />
       <module name="webserviceContacts" target="15" />
     </bytecodeTargetLevel>
@@ -28,7 +30,8 @@
       <module name="Companies_API" options="-parameters" />
       <module name="Contact_API" options="-parameters" />
       <module name="ContextInformation_API" options="-parameters" />
-      <module name="webservice" options="-parameters" />
+      <module name="Lead_API" options="-parameters" />
+      <module name="Opportunnity_API" options="-parameters" />
       <module name="webserviceCompanies" options="-parameters" />
       <module name="webserviceContacts" options="-parameters" />
     </option>

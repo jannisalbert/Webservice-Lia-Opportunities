@@ -19,12 +19,12 @@ public class CompanyController {
         this.service = service;
     }
 
-    @GetMapping("/contacts")
+    @GetMapping("/companies")
     public List<CompanyDto> all() {
         return service.getAllCompanies();
     }
 
-    @GetMapping("/contacts/{id}")
+    @GetMapping("/companies/{id}")
     public Optional <CompanyDto> getOne(@PathVariable Long id){
 
         return Optional.ofNullable(service.getOne(id)
@@ -33,19 +33,19 @@ public class CompanyController {
 
     }
 
-    @PostMapping("/contacts")
+    @PostMapping("/companies")
     @ResponseStatus(HttpStatus.CREATED)
     public CompanyDto create(@RequestBody CompanyDto companyDto) {
         return service.createCompany(companyDto);
     }
 
 
-    @DeleteMapping("/contacts/{id}")
+    @DeleteMapping("/companies/{id}")
     public void delete(@PathVariable Long id) {
         service.delete(id);
     }
 
-    @PutMapping("/contacts/{id}")
+    @PutMapping("/companies/{id}")
     public CompanyDto replace(@RequestBody CompanyDto directorDto, @PathVariable Long id) {
         return service.replace(id, directorDto);
     }

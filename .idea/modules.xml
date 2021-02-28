@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/CompaniesAPI/Companies_API.iml" filepath="$PROJECT_DIR$/CompaniesAPI/Companies_API.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContactAPI/Contact_API.iml" filepath="$PROJECT_DIR$/ContactAPI/Contact_API.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContextInformationAPI/ContextInformation_API.iml" filepath="$PROJECT_DIR$/ContextInformationAPI/ContextInformation_API.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OpportunitiesAPI/webservice.iml" filepath="$PROJECT_DIR$/OpportunitiesAPI/webservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserEndpointAPI/Lead_API.iml" filepath="$PROJECT_DIR$/UserEndpointAPI/Lead_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OpportunitiesAPI/Opportunnity_API.iml" filepath="$PROJECT_DIR$/OpportunitiesAPI/Opportunnity_API.iml" />
       <module fileurl="file://$PROJECT_DIR$/CompaniesAPI/webserviceCompanies.iml" filepath="$PROJECT_DIR$/CompaniesAPI/webserviceCompanies.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContactAPI/webserviceContacts.iml" filepath="$PROJECT_DIR$/ContactAPI/webserviceContacts.iml" />
     </modules>
