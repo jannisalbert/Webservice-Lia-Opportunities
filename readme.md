@@ -3,7 +3,7 @@
 # Webserice-Lia-Opportunities
 
 
-I detta sidoporjekt byggar vi en web service för att kunna hantera sina LIA ansökningar.
+I detta sidoporjekt byggar vi en web service för att hantera sina LIA ansökningar på ett effektivt sätt.
 Webservice är byggt som en modulär applikation i Java.
 
 
