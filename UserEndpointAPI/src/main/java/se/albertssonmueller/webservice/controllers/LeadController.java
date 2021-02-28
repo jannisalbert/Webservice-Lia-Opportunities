@@ -50,7 +50,7 @@ public class LeadController {
 	}
 	
 	public OpportunityDto getOneOpportunity(long id) {
-		final String uri = "http://localhost:5053/opportunities/" + id;
+		final String uri = "http://opportunities:5053/opportunities/" + id;
 
 		return restTemplate.getForObject(uri, OpportunityDto.class);
 
@@ -58,7 +58,7 @@ public class LeadController {
 
 	public CompanyDto getOneCompany(long id) {
 
-		final String uri = "http://localhost:5050/companies/" + id;
+		final String uri = "http://companies:5050/companies/" + id;
 
 		return restTemplate.getForObject(uri, CompanyDto.class);
 
@@ -67,7 +67,7 @@ public class LeadController {
 
 	public ContactDto getOneContact(long id) {
 
-		final String uri = "http://localhost:5051/contacts/" + id;
+		final String uri = "http://contacts:5051/contacts/" + id;
 
 		return restTemplate.getForObject(uri, ContactDto.class);
 
@@ -75,7 +75,7 @@ public class LeadController {
 
 	public PriorityDto getPriority(long id) {
 
-		final String uri = "http://localhost:5052/priorities/" + id;
+		final String uri = "http://contextinfo:5052/priorities/" + id;
 
 		return restTemplate.getForObject(uri, PriorityDto.class);
 
@@ -83,7 +83,7 @@ public class LeadController {
 
 	public StatusDto getStatus(long id) {
 
-		final String uri = "http://localhost:5052/status/" + id;
+		final String uri = "http://contextinfo:5052/status/" + id;
 
 		return restTemplate.getForObject(uri, StatusDto.class);
 
