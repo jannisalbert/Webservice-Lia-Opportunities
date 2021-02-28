@@ -26,55 +26,66 @@ public class LeadController {
 	RestTemplate restTemplate;
 
 	@GetMapping("/leads/{id}")
-	public OpportunityDto getLead(@PathVariable long id) {
+	public LeadDto getLead(@PathVariable long id) {
 
-		// Finds the object which holds references to the other movies
-		StatusDto statusDto = getOneOpportunity(id);
+		// Finds the opportunity
+		OpportunityDto opportunityDto = getOneOpportunity(id);
 
 		// Which Ids to find in the other services
-		long genreId = statusDto.getGenreId();
-		long languageId = statusDto.getLanguageId();
-		long directorId = statusDto.getDirectorId();
+		Long companyId = opportunityDto.getCompanyId();
+		Long contactId = opportunityDto.getContactId();
+		Long statusId = opportunityDto.getStatusId();
+		Long priorityId = opportunityDto.getPriorityId();
 
 		// Search for the ids in the other APIs
-		ContactDto contactDto = getOneGenre(genreId);
-		PriorityDto priorityDto = getOneLanguage(languageId);
-		CompanyDto companyDto = getOneDirector(directorId);
+		CompanyDto companyDto = getOneCompany(companyId);
+		ContactDto contactDto = getOneContact(contactId);
+		StatusDto statusDto = getStatus(statusId);
+		PriorityDto priorityDto = getPriority(priorityId);
 
 		// Return to client
-		return new OpportunityDto(statusDto, companyDto, contactDto.getGenre(), priorityDto.getLanguage());
+//		return new OpportunityDto(statusDto, companyDto, contactDto.getGenre(), priorityDto.getLanguage());
 
+		return new LeadDto(opportunityDto,companyDto,contactDto,priorityDto,statusDto);
 	}
 	
-	public StatusDto getOneOpportunity(long id) {
-		final String uri = "http://localhost:5054/movies/" + id;
+	public OpportunityDto getOneOpportunity(long id) {
+		final String uri = "http://localhost:5053/opportunities/" + id;
 
-		return restTemplate.getForObject(uri, StatusDto.class);
+		return restTemplate.getForObject(uri, OpportunityDto.class);
 
 	}
 
-	public CompanyDto getOneDirector(long id) {
+	public CompanyDto getOneCompany(long id) {
 
-		final String uri = "http://localhost:5050/directors/" + id;
+		final String uri = "http://localhost:5050/companies/" + id;
 
 		return restTemplate.getForObject(uri, CompanyDto.class);
 
 
 	}
 
-	public ContactDto getOneGenre(long id) {
+	public ContactDto getOneContact(long id) {
 
-		final String uri = "http://localhost:5053/genre/" + id;
+		final String uri = "http://localhost:5051/contacts/" + id;
 
 		return restTemplate.getForObject(uri, ContactDto.class);
 
 	}
 
-	public PriorityDto getOneLanguage(long id) {
+	public PriorityDto getPriority(long id) {
 
-		final String uri = "http://localhost:5052/languages/" + id;
+		final String uri = "http://localhost:5052/priorities/" + id;
 
 		return restTemplate.getForObject(uri, PriorityDto.class);
+
+	}
+
+	public StatusDto getStatus(long id) {
+
+		final String uri = "http://localhost:5052/status/" + id;
+
+		return restTemplate.getForObject(uri, StatusDto.class);
 
 	}
 
