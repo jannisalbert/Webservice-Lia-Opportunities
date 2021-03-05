@@ -10,19 +10,6 @@ public class LeadWebserviceApplication {
         SpringApplication.run(LeadWebserviceApplication.class, args);
     }
 
-
-//    @Bean
-//    public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
-//        return args -> {
-//            MovieDto quote = restTemplate.getForObject(
-//                    "http://localhost:5054/movies/1", MovieDto.class);
-//            System.out.println(quote);
-//
-//        };
-//
-//
-//    }
-
 }
 
 

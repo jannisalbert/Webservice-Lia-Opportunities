@@ -30,7 +30,6 @@ public class CompanyController {
         return Optional.ofNullable(service.getOne(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
                         "Id " + id + " not found.")));
-
     }
 
     @PostMapping("/companies")
@@ -49,11 +48,4 @@ public class CompanyController {
     public CompanyDto replace(@RequestBody CompanyDto directorDto, @PathVariable Long id) {
         return service.replace(id, directorDto);
     }
-
 }
-
-
-
-
-
-

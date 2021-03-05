@@ -71,10 +71,10 @@ public class LeadController {
 			LeadDto newLead = new LeadDto();
 
 			newLead.setOpportunityDto(opportunity);
-			newLead.setCompanyDto(allCompanies.get(( (int) opportunity.getCompanyId()) ));
-			newLead.setContactDto(allContacts.get( (int) opportunity.getContactId() ));
-			newLead.setPriorityDto(allPriorities.get( (int) opportunity.getPriorityId() ));
-			newLead.setStatusDto(allStatus.get( (int) opportunity.getStatusId() ));
+			newLead.setCompanyDto(allCompanies.get(( (int) opportunity.getCompanyId()) -1 ));
+			newLead.setContactDto(allContacts.get( (int) opportunity.getContactId() - 1));
+			newLead.setPriorityDto(allPriorities.get( (int) opportunity.getPriorityId() - 1));
+			newLead.setStatusDto(allStatus.get( (int) opportunity.getStatusId() - 1));
 
 			allLeads.add(newLead);
 		}

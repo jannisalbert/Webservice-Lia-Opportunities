@@ -55,6 +55,13 @@ services:
     container_name: userendpoint
     hostname: userendpoint
 
+  consul_leads:
+    image: consul:latest
+    command: "agent -server -ui -node=server-1 -bootstrap-expect=1 -client 0.0.0.0"
+    restart: always
+    ports:
+      - 8500:8500
+
   maria_db:
     image: mariadb:latest
     restart: always
