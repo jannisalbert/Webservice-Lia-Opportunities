@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   companies:
-    image: boalbert/companies-a:v1
+    build: .\CompaniesAPI\.
     restart: always
     ports:
       - 5050:5050
@@ -12,7 +12,7 @@ services:
     hostname: companies
 
   opportunities:
-    image: boalbert/opportunities-a:v1
+    build: .\OpportunitiesAPI\.
     restart: always
     ports:
       - 5053:5053
@@ -22,7 +22,7 @@ services:
     hostname: opportunities
 
   contextinfo:
-    image: boalbert/contextinfo-a:v1
+    build: .\ContextInformationAPI\.
     restart: always
     ports:
       - 5052:5052
@@ -32,7 +32,7 @@ services:
     hostname: contextinfo
 
   contacts:
-    image: boalbert/contacts-a:v1
+    build: .\ContactAPI\.
     restart: always
     ports:
       - 5051:5051
@@ -42,7 +42,7 @@ services:
     hostname: contacts
 
   userendpoint:
-    image: boalbert/userendpoint-a:v1
+    build: .\UserEndPointAPI\.
     restart: always
     ports:
       - 5054:5054
