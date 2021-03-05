@@ -16,6 +16,9 @@ public class LeadDto {
 		this.statusDto = statusDto;
 	}
 
+	public LeadDto() {
+	}
+
 	public OpportunityDto getOpportunityDto() {
 		return opportunityDto;
 	}

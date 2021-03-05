@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CompanyDto {
 
-    private Long id;
+    private long id;
 
     private String name;
     private String website;
     private String city;
 
-    public CompanyDto(Long id, String name, String website, String city) {
+    public CompanyDto(long id, String name, String website, String city) {
         this.id = id;
         this.name = name;
         this.website = website;
@@ -25,7 +25,7 @@ public class CompanyDto {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

@@ -7,12 +7,12 @@ import java.time.LocalDate;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class OpportunityDto {
 
-    private Long id;
+    private long id;
 
-    private Long companyId;
-    private Long contactId;
-    private Long statusId;
-    private Long priorityId;
+    private long companyId;
+    private long contactId;
+    private long statusId;
+    private long priorityId;
     private String comment;
     private LocalDate dateCreated = LocalDate.now();
     private String regSign;
@@ -20,8 +20,8 @@ public class OpportunityDto {
     public OpportunityDto() {
     }
 
-    public OpportunityDto(Long id, Long companyId, Long contactId, Long statusId,
-                          Long priorityId, String comment, LocalDate dateCreated, String regSign) {
+    public OpportunityDto(long id, long companyId, long contactId, long statusId,
+                          long priorityId, String comment, LocalDate dateCreated, String regSign) {
         this.id = id;
         this.companyId = companyId;
         this.contactId = contactId;
@@ -32,43 +32,43 @@ public class OpportunityDto {
         this.regSign = regSign;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public Long getCompanyId() {
+    public long getCompanyId() {
         return companyId;
     }
 
-    public void setCompanyId(Long companyId) {
+    public void setCompanyId(long companyId) {
         this.companyId = companyId;
     }
 
-    public Long getContactId() {
+    public long getContactId() {
         return contactId;
     }
 
-    public void setContactId(Long contactId) {
+    public void setContactId(long contactId) {
         this.contactId = contactId;
     }
 
-    public Long getStatusId() {
+    public long getStatusId() {
         return statusId;
     }
 
-    public void setStatusId(Long statusId) {
+    public void setStatusId(long statusId) {
         this.statusId = statusId;
     }
 
-    public Long getPriorityId() {
+    public long getPriorityId() {
         return priorityId;
     }
 
-    public void setPriorityId(Long priorityId) {
+    public void setPriorityId(long priorityId) {
         this.priorityId = priorityId;
     }
 

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ContactDto {
 
-    private Long id;
+    private long id;
 
     private Long companyId;
     private String firstName;
@@ -16,7 +16,7 @@ public class ContactDto {
     public ContactDto() {
     }
 
-    public ContactDto(Long id, Long companyId, String firstName, String lastName, String email, String phone) {
+    public ContactDto(long id, Long companyId, String firstName, String lastName, String email, String phone) {
         this.id = id;
         this.companyId = companyId;
         this.firstName = firstName;
@@ -25,11 +25,11 @@ public class ContactDto {
         this.phone = phone;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
